@@ -22,7 +22,7 @@
 							<a class="nav-link" href="AddTask">Add Task</a>
 						</li>
 						<li class="nav-item px-4">
-							<a class="nav-link" href="fcfs">DFCFS</a>
+							<a class="nav-link" href="dfcfs">DFCFS</a>
 						</li>
 						<li class="nav-item px-4">
 							<a class="nav-link" href="sjf">SJF</a>
@@ -36,10 +36,10 @@
 	</nav>
 	<div class="container-fluid">
 		<form action="/save" method="post" class="p-4 border rounded shadow-sm bg-light">
-				
+			  <input type="hidden" name="id" th:value="${id}" />
 			  <div class="mb-3">
 			      <label for="task_type" class="form-label">Task Type</label>
-			      <select class="form-control" id="task_type" name="task_type">
+			      <select class="form-control" id="task_type" name="task_type" required>
 			        <option value="High">High</option>
 			        <option value="Medium">Medium</option>
 			        <option value="Low">Low</option>
@@ -47,30 +47,20 @@
 			  </div>
 			  <div class="mb-3">
 			  	<label for="deadline_date" class="form-label">Deadline Date</label>
-			  	<input type="date" class="form-control" id="deadline_date"  name="deadline_date">
+			  	<input type="date" class="form-control" id="deadline_date"  name="deadline_date" required>
 			  </div>
 			  <div class="mb-3">
-				  <label for="estimated_date" class="form-label">Estimated Time/label>
-				  <input type="number" class="form-control" id="estimated_time" name="estimated_time">
+				  <label for="estimated_date" class="form-label">Estimated Time(minutes)</label>
+				  <input type="number" class="form-control" id="estimated_time" name="estimated_time" required>
 			  </div>
 			  <div class="text-center">
-			       <button type="submit" class="btn btn-primary" id="submitted">Save</button>
+			       <button type="submit" class="btn btn-primary" id="submitted">Edit</button>
 			  </div>
+			  <script>
+			  	  const today = new Date().toISOString().split("T")[0];
+			  	  document.getElementById("deadline_date").setAttribute("min", today);
+			  </script>
 		</form>
-		<!-- Toast -->
-		 <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-		        <div id="liveToast" class="toast text-bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
-		          <div class="toast-header">
-		            <strong class="me-auto">Task Scheduler</strong>
-		            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-		          </div>
-		          <div class="toast-body">
-		            Edited Successfully!
-		          </div>
-		        </div>
-		      </div>
-		  </div>
 	</div>
-	<script src="/js/AddTask.js"></script>
   </body>
   
