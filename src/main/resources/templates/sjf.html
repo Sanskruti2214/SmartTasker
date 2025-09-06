@@ -22,7 +22,7 @@
 						<a class="nav-link" href="AddTask">Add Task</a>
 					</li>
 					<li class="nav-item px-4">
-						<a class="nav-link" href="fcfs">DFCFS</a>
+						<a class="nav-link" href="dfcfs">DFCFS</a>
 					</li>
 					<li class="nav-item px-4">
 						<a class="nav-link" href="sjf">SJF</a>
@@ -56,7 +56,7 @@
 	                <td th:text="${client.deadline_date}"></td>
 	                <td th:text="${client.estimated_time}"></td>
 	                <td style="white-space:nowrap">
-						<form th:action="@{/edit}" method="post" style="display:inline;">
+						<form th:action="@{/edit}" method="put" style="display:inline;">
 								<input type="hidden" name="id" th:value="${client.id}" />
 								<button type="submit" class="btn btn-primary btn-sm">Edit</button>
 						</form>

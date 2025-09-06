@@ -9,9 +9,10 @@ public class Client {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
-	private String task_name;
-	@Column(nullable=false)
-	private String task_type; // Personal and  Professional
+	@Column(name = "task_name")
+	private String taskName;
+	@Column(name = "task_type",nullable=false)
+	private String taskType; // Personal and  Professional
 	@Column(nullable=false)
 	private Date entry_date;
 	@Column(nullable=false)
@@ -22,23 +23,23 @@ public class Client {
 	public Client() {
 		super();
 	}
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
 	public void setId(int id) {
 		this.id = id;
 	}
 	public String getTask_name() {
-		return task_name;
+		return taskName;
 	}
 	public void setTask_name(String task_name) {
-		this.task_name = task_name;
+		this.taskName = task_name;
 	}
 	public String getTask_type() {
-		return task_type;
+		return taskType;
 	}
 	public void setTask_type(String task_type) {
-		this.task_type = task_type;
+		this.taskType = task_type;
 	}
 	public Date getEntry_date() {
 		return entry_date;
