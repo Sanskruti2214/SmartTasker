@@ -1,7 +1,7 @@
 **SmartTasker – Task Management Web App**
 
 SmartTasker is a task management web application built with Spring Boot, Thymeleaf, and MySQL.
-It helps users organize tasks effectively by applying CPU scheduling algorithms such as DFCFS (Deadline First-Come), SJF (Shortest Job First), and Priority Scheduling to optimize task prioritization and boost productivity.
+It helps users organize tasks effectively by applying scheduling algorithms such as DFCFS (Deadline First-Come), SJF (Shortest Job First), and Priority Scheduling to optimize task prioritization and boost productivity.
 
 🚀 **Features**
 
