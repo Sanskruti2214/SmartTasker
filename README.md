@@ -64,13 +64,13 @@ Deleting Task
 
 <img width="1919" height="1017" alt="Screenshot 2025-09-06 114752" src="https://github.com/user-attachments/assets/b9d9b681-e4e4-4dab-b356-c3c2e68f83a5" />
 
-DFCFS Scheduling 
+DFCFS Ordering
 <img width="1917" height="1015" alt="Screenshot 2025-09-06 114305" src="https://github.com/user-attachments/assets/8486977a-90c6-4618-9e29-1d73961d7d68" />
 
-SJF Scheduling
+SJF Ordering
 <img width="1919" height="1017" alt="Screenshot 2025-09-06 114319" src="https://github.com/user-attachments/assets/84d87cfe-ac74-469d-8589-975e4b6e93d0" />
 
-Priority Scheduling
+Priority Ordering
 <img width="1919" height="1020" alt="Screenshot 2025-09-06 114332" src="https://github.com/user-attachments/assets/3a7235e5-ea64-4218-abf0-2ace7134b610" />
 
 
